@@ -1,0 +1,434 @@
+/* CSS reset: reset margin, padding, border, font size on all elements for consistency between browsers. this one came from http://meyerweb.com/eric/tools/css/reset/ */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}nav ol,nav ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}strong{font-weight:700}em{font-style:italic}
+/*mystyles*/
+
+body {
+    /* main website font */
+    /* background style */
+    font: 400 100%/1.6 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: #2b2b2b;
+}
+
+/*logo*/
+
+#logo-header h1 a {
+    display: block;
+    text-indent: -9999px;
+    background: url(../images/ansar-logo.png) no-repeat;
+    width: 279px;
+    height: 109px;
+    margin: 0 auto;
+}
+
+/* hide mobile menu button on desktops*/
+ #mobile-menu-btn {
+     display: none;
+ }
+
+ /*nav style*/
+
+ #main-nav ul {
+     margin-top: 7%;
+     display: table;
+     width: 100%;
+ }
+ 
+ #main-nav ul li {
+     display: table-cell;
+     text-align: center;
+     width: 25%;
+     /* 100% / 6 buttons = 14.28% */
+ }
+ 
+ #main-nav ul li a {
+     padding: 5px 0;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 400;
+     text-transform: uppercase;
+     color: rgb(238,166,100);
+ }
+ 
+ #main-nav ul li a:hover,
+ #main-nav ul li a#current {
+     font-weight: 700;
+     color: rgb(123,199,233);
+ }
+
+/*banners*/
+
+#home-banner {
+    background: url(../images/home-main-banner.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    resize: vertical;
+    overflow: auto;
+}
+
+#theproblem-banner {
+    background: url(../images/theproblem-main-header.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 532px;
+    resize: horizontal;
+    overflow: auto;
+}
+
+#volunteer-banner {
+    background: url(../images/volunteer-main-banner.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 532px;
+    resize: horizontal;
+    overflow: auto;
+}
+
+#donate-banner {
+    background: url(../images/donate-main-banner.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 532px;
+    resize: horizontal;
+    overflow: auto;
+}
+
+/*headline style*/
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: rgb(123, 199, 233);
+    font-size: 2rem;
+}
+#app-loading-screen {
+    position: relative;
+    margin-top: -100%;
+}
+
+/*home description */
+
+#ansar-description {
+    background-color: rgba( 255, 255, 255, 0.80 );
+    padding: 5%;
+    margin-top: 60%;
+}
+#ansar-app {
+    padding: 7% 15%;
+    background-color: rgb(242,242,242);
+    text-align: center;
+    
+}
+
+/*app overview section*/
+
+#app-details {
+    text-align: center;
+    padding: 2%;
+}
+
+.ansar-features {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.ansar-features img {
+    width: 64px;
+    height: 64px;
+}
+
+.ansar-features h3 {
+    font-weight: 700;
+}
+
+#app-menu-screen {
+    margin-top: 15%;
+}
+
+/*style for the sub banners*/
+
+.sub-banner-design {
+    margin: 2% 0;
+    position: relative;
+}
+
+.sub-banner-design:after {
+    content:'';
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 98%;
+    display: block;
+    position: absolute;
+    background:rgb(123, 199, 233);
+    opacity: 0.4;
+}
+
+/*mission*/
+
+#mission-statement {
+    text-align: center;
+    padding: 2% 0;
+}
+
+/*align text center class*/
+
+.center-text {
+    text-align: center;
+}
+
+/*footer*/
+
+footer {
+    background: rgb(123, 199, 233);
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    padding: 2% 0;
+    margin-top: 10px;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+footer ul {
+    margin-bottom: 15px;
+    display: table;
+    width: 100%
+}
+
+footer ul li {
+    list-style: none;
+    margin: 10px;
+    margin-bottom: 0;
+    display: inline-block;
+    text-align: center;
+}
+
+/*social*/
+
+#social li a {
+    text-indent: -9999px;
+    background: no-repeat;
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    zoom: 60%;
+}
+
+#social li:nth-child(1) a {
+    background: url(../images/facebook-logo.png);
+}
+
+#social li:nth-child(2) a {
+    background: url(../images/twitter-logo.png);
+}
+
+/*text over header*/
+
+.section-over-banner { 
+    background-color: #ffffff;
+    margin-top: -120px;
+    padding: 10px
+}
+
+.section-over-banner p {
+    margin-top: 5px;
+}
+
+#importance-section {
+    padding: 10px;
+}
+
+#importance-section p{
+    margin-top: 5px;
+}
+
+/*infographics*/
+
+.divider-top-border {
+    margin: 5% 0;
+    padding: 5% 0;
+    border-top: 2px solid rgb(123, 199, 233); 
+}
+#info-share h2 {
+    margin: 5% 0;
+}
+
+.section-infographic {
+    margin: 0 0 5%;
+}
+
+.section-infographic img{
+    position: relative;
+    overflow: auto;
+    border: 2px solid rgb(123, 199, 233);
+    
+}
+
+.featherlight .featherlight-content {
+    background: rgba( 126, 123, 123, 0.648 );
+}
+
+/*forms*/
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(238,166,100);
+}
+
+input[type=text]:focus {
+    border: 3px solid rgb(238,166,100);
+}
+
+textarea {
+    width: 100%;
+    height: 220px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid rgb(238,166,100);
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: 2px solid rgb(238,166,100);
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+/*check boxes*/
+
+input[type=checkbox]:not(old),
+input[type=radio   ]:not(old){
+  width     : 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+}
+input[type=checkbox]:not(old) + label,
+input[type=radio   ]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -2em;
+  line-height  : 1.5em;
+}
+input[type=checkbox]:not(old) + label > span,
+input[type=radio   ]:not(old) + label > span{
+  display          : inline-block;
+  width            : 0.875em;
+  height           : 0.875em;
+  margin           : 0.25em 0.5em 0.25em 0.25em;
+  border           : 0.0625em solid rgb(192,192,192);
+  border-radius    : 0.25em;
+  background       : rgb(224,224,224);
+  background-image :    -moz-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :     -ms-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :      -o-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image : -webkit-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :         linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  vertical-align   : bottom;
+}
+input[type=checkbox]:not(old):checked + label > span,
+input[type=radio   ]:not(old):checked + label > span{
+  background-image :    -moz-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :     -ms-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :      -o-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image : -webkit-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :         linear-gradient(rgb(224,224,224),rgb(240,240,240));
+}
+input[type=checkbox]:not(old):checked + label > span:before{
+  content     : '✓';
+  display     : block;
+  width       : 1em;
+  color       : rgb(238,166,100);
+  font-size   : 0.875em;
+  line-height : 1em;
+  text-align  : center;
+  text-shadow : 0 0 0.0714em rgb(238,166,100);
+  font-weight : bold;
+}
+input[type=radio]:not(old):checked + label > span > span{
+  display          : block;
+  width            : 0.5em;
+  height           : 0.5em;
+  margin           : 0.125em;
+  border           : 0.0625em solid rgb(238,166,100);
+  border-radius    : 0.125em;
+  background       : rgb(238,166,100);
+  background-image :    -moz-linear-gradient(rgb(238,166,100),rgb(238,166,100));
+  background-image :     -ms-linear-gradient(rgb(238,166,100),rgb(238,166,100));
+  background-image :      -o-linear-gradient(rgb(238,166,100),rgb(238,166,100));
+  background-image : -webkit-linear-gradient(rgb(238,166,100),rgb(238,166,100));
+  background-image :         linear-gradient(rgb(238,166,100),rgb(238,166,100));
+}
+
+/*buton*/
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: rgb(238,166,100);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#other-amount input[type=text] {
+    background-color: white;
+    background-image: url('../images/dollar-symbol.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

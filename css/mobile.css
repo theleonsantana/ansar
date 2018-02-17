@@ -1,0 +1,89 @@
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.alpha,
+.omega {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.align_center,
+.align_right {
+  text-align: left;
+}
+
+/*body font*/
+
+body {
+    /* main website font */
+    /* background style */
+    font: 400 90%/1.4 'Raleway', sans-serif;
+}
+
+/*logo*/
+
+#logo-header h1 a {
+    zoom:75%;
+}
+
+/*app img*/
+
+#app-loading-screen {
+    margin-top: 0;
+}
+#app-menu-screen {
+    margin: 5% 0;
+}
+
+/*images in mobile*/
+
+/*mobile nav*/
+
+#mobile-menu-btn {
+	display: block;
+	color: rgb(238,166,100);
+	font: 700 100%/1 'Raleway', sans-serif;
+	text-transform: uppercase;
+    text-align: center;
+	margin: 10px 0;
+	padding: 10px; /* allow space on left for menu icon */
+}
+#main-nav ul,
+#main-nav ul li,
+#main-nav ul li a {
+    display: block;
+}
+
+#main-nav ul {
+    margin-top: 0;
+}
+
+#main-nav ul li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgb(123, 199, 233);
+}
+
+#main-nav {
+    display: none;
+}
+
+/*bnt*/
+
+input[type=button], input[type=submit], input[type=reset] {
+    width: 50%;
+    margin-left: 25%;
+}
